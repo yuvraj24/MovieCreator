@@ -5,16 +5,67 @@ MovieCreator is a sample repository demostrating a full stack web application wh
 
 ![Alt text](https://github.com/yuvraj24/MovieCreator/blob/master/public/MERNStack.jpg)
 
-### Spread Your ❤️:
+## Spread Your ❤️:
 [![GitHub followers](https://img.shields.io/github/followers/yuvraj24.svg?style=social&label=Follow)](https://github.com/yuvraj24)  [![Twitter Follow](https://img.shields.io/twitter/follow/yuvrajpandey24.svg?style=social)](https://twitter.com/yuvrajpandey24) 
 
-# What is MERN Stack?
+## What is MERN Stack?
 
 MERN Stack is a Javascript Stack that is used for easier and faster deployment of full-stack web applications. MERN Stack comprises of 4 technologies namely: MongoDB, Express, React and Node.js. It is designed to make the development process smoother and easier.
 
 Each of these 4 powerful technologies provides an end-to-end framework for the developers to work in and each of these technologies play a big part in the development of web applications ❤️
 
-# About Me
+## Getting Started
+
+1. Install Dependencies
+```
+npm install express body-parser cors mongoose nodemon
+```
+
+2. Install MongoDb
+```
+$ brew tap mongodb/brew
+$ brew install mongodb-community
+$ brew services start mongodb-community
+If you have a previous version of mongodb
+$ brew services stop mongodb
+$ brew uninstall mongodb
+
+$ brew tap mongodb/brew
+$ brew install mongodb-community
+$ brew services start mongodb-community
+```
+For Windows Installation *<a href="https://docs.mongodb.com/manual/administration/install-community/" target="_blank">click here</a>*
+
+3. Start Server
+```
+cd server
+nodemon start
+```
+
+4. Open Web Application
+```
+cd client
+npm start
+```
+
+## Screenshot
+
+
+<img src="https://raw.githubusercontent.com/yuvraj24/MovieCreator/master/images/HomeView.png"  />
+</br>
+</br>
+<img src="https://raw.githubusercontent.com/yuvraj24/MovieCreator/master/images/CreateView.png"   />
+</br>
+</br>
+<img src="https://raw.githubusercontent.com/yuvraj24/MovieCreator/master/images/MenuOptions.png" />
+</br>
+</br>
+<img src="https://raw.githubusercontent.com/yuvraj24/MovieCreator/master/images/UpdateView.png"  />
+</br>
+</br>
+<img src="https://raw.githubusercontent.com/yuvraj24/MovieCreator/master/images/DeleteView.png"   />
+
+## About Me
 
 ### Yuvraj Pandey
 I am a passionate Engineer who likes to push himself on various fronts of technologies.  
