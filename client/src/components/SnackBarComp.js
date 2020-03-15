@@ -1,46 +1,49 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { Snackbar } from "@material-ui/core";
-import { makeStyles } from "@material-ui/core/styles";
-import Button from "@material-ui/core/Button";
+import { makeStyles } from "@material-ui/core/styles"; 
 import IconButton from "@material-ui/core/IconButton";
 import CloseIcon from "@material-ui/icons/Close";
+import { Colors } from "../utils/colors";
 
 const SnackBarComp = ({ isShowMessage, messageInfo, changeMsgStatus }) => {
-  const queueRef = React.useRef([]);
   const [open, setOpen] = React.useState(isShowMessage);
 
-  const processQueue = () => {
-    if (queueRef.current.length > 0) {
-      setOpen(true);
-    }
-  };
+  useEffect(() => {
+    setOpen(isShowMessage)
+  }, [isShowMessage])
 
-  const handleClick = message => () => {
-    queueRef.current.push({
-      message,
-      key: new Date().getTime()
-    });
+  // const processQueue = () => {
+  //   if (queueRef.current.length > 0) {
+  //     setOpen(true);
+  //   }
+  // };
 
-    if (open) {
-      // immediately begin dismissing current message
-      // to start showing new one
-      setOpen(false);
-    } else {
-      processQueue();
-    }
-  };
+  // const handleClick = message => () => {
+  //   queueRef.current.push({
+  //     message,
+  //     key: new Date().getTime()
+  //   });
+
+  //   if (open) {
+  //     // immediately begin dismissing current message
+  //     // to start showing new one
+  //     setOpen(false);
+  //   } else {
+  //     processQueue();
+  //   }
+  // };
 
   const handleClose = (event, reason) => {
     if (reason === "clickaway") {
       return;
     }
-    setOpen(false);
-    isShowMessage = false
+    setOpen(false); 
+    changeMsgStatus()
   };
 
-  const handleExited = () => {
-    processQueue();
-  };
+  // const handleExited = () => {
+  //   processQueue();
+  // };
 
   const useStyles = makeStyles(theme => ({
     close: {
@@ -55,12 +58,13 @@ const SnackBarComp = ({ isShowMessage, messageInfo, changeMsgStatus }) => {
       key={"key"}
       anchorOrigin={{
         vertical: "bottom",
-        horizontal: "center"
+        horizontal: "right"
       }}
+      color={Colors.app_bg_color}
       open={open}
       autoHideDuration={4000}
       onClose={handleClose}
-      message={messageInfo ? messageInfo.message : undefined}
+      message={messageInfo ? messageInfo : undefined}
       action={
         <React.Fragment>
           <IconButton

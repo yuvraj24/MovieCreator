@@ -7,16 +7,13 @@ import IconButton from "@material-ui/core/IconButton";
 import MovieIcon from "@material-ui/icons/MovieFilterRounded";
 import CreateIcon from "@material-ui/icons/Add";
 import MovieList from "../pages/MoviesList";
-import MoviesInsert from "../pages/MoviesInsert";
+import MoviesInsertUpdate from "../pages/MoviesInsertUpdate";
 import {
   BrowserRouter as Router,
   Switch,
   Route, 
-  NavLink
-} from "react-router-dom";
-import { Link } from "@material-ui/core";
-import { Colors } from "../utils/colors";
-import MovieInsert from "../pages/MoviesInsert";
+} from "react-router-dom"; 
+import { Colors } from "../utils/colors"; 
 
 const useStyles = makeStyles(theme => ({
   root: {
@@ -50,7 +47,7 @@ export default function App() {
   return (
     <Router>
       <div>
-        <AppBar position="static">
+        <AppBar color="primary" position="static">
           <Toolbar>
             <IconButton
               edge="start"
@@ -61,7 +58,7 @@ export default function App() {
               <MovieIcon style={{ fontSize: 26 }} />
             </IconButton>
             <Typography variant="h6" className={classes.title}>
-              Movies
+              MovieCreator
             </Typography>
             <IconButton
               edge="start"
@@ -76,11 +73,19 @@ export default function App() {
           </Toolbar>
         </AppBar>
         {/* <MovieList /> */}
-        {isOpen && <MovieInsert isOpen={isOpen} handleCloseClick={() => setOpen(false)} />}
+        {isOpen && (
+          <MoviesInsertUpdate
+            isOpen={isOpen}
+            handleCloseClick={() => {
+              setOpen(false);
+              window.location.href = "/";
+            }}
+          />
+        )}
       </div>
 
       <Switch>
-        <Route path="/movies/create" exact component={MoviesInsert} />
+        <Route path="/movies/create" exact component={MoviesInsertUpdate} />
         <Route path="/" exact component={MovieList} />
       </Switch>
     </Router>
