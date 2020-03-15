@@ -1,7 +1,7 @@
 # MovieCreator
 [![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)
 
-MovieCreator is a sample repository which demostrates a full stack web application which comprises of Frontend developed in **React** followed by **NodeJs** & **ExpressJs** for Backend in sync with **MonngoDB** for database.
+MovieCreator is a sample repository demostrating a full stack web application which comprises of *Frontend* developed in **React** followed by **NodeJs** & **ExpressJs** for *Backend* in sync with **MonngoDB** for *database*.
 
 ![Alt text](https://github.com/yuvraj24/MovieCreator/blob/master/public/MERNStack.jpg)
 
