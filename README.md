@@ -12,6 +12,11 @@ MovieCreator is a sample repository demostrating a full stack web application wh
 
 MERN Stack is a Javascript Stack that is used for easier and faster deployment of full-stack web applications. MERN Stack comprises of 4 technologies namely: MongoDB, Express, React and Node.js. It is designed to make the development process smoother and easier.
 
+* **Mongo DB** : A document-based open source database, that provides you scalability and flexibility.
+* **Express JS** : A structured base designed to develop web applications and APIs.
+* **React JS** : A Javascript Front-end library for building user interfaces. Maintained by Facebook.
+* **Node JS** : A javascript runtime built on Chrome’s V8 JS engine.
+
 Each of these 4 powerful technologies provides an end-to-end framework for the developers to work in and each of these technologies play a big part in the development of web applications ❤️
 
 ## Getting Started
@@ -26,6 +31,7 @@ npm install express body-parser cors mongoose nodemon
 $ brew tap mongodb/brew
 $ brew install mongodb-community
 $ brew services start mongodb-community
+
 If you have a previous version of mongodb
 $ brew services stop mongodb
 $ brew uninstall mongodb
