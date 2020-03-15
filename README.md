@@ -1,7 +1,7 @@
 # MovieCreator
 [![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)
 
-MovieCreator is a sample repository demostrating a full stack web application which comprises of *Frontend* developed in **React** followed by **NodeJs** & **ExpressJs** for *Backend* in sync with **MonngoDB** for *database*.
+MovieCreator is a sample repository demostrating a full stack web application which comprises of *frontend* developed in **React** followed by **NodeJs** & **ExpressJs** for *backend* in sync with **MonngoDB** for *database*.
 
 ![Alt text](https://github.com/yuvraj24/MovieCreator/blob/master/public/MERNStack.jpg)
 
@@ -17,7 +17,7 @@ Each of these 4 powerful technologies provides an end-to-end framework for the d
 # About Me
 
 ### Yuvraj Pandey
-I am a passionate Mobility Engineer which likes to push himself on various fronts of technologies.  
+I am a passionate Engineer who likes to push himself on various fronts of technologies.  
 
 For more exciting updates follow me,
 
