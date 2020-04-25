@@ -21,12 +21,12 @@ Each of these 4 powerful technologies provides an end-to-end framework for the d
 
 ## Getting Started
 
-### * Install Dependencies
+### *Install Dependencies*
 ```
 npm install express body-parser cors mongoose nodemon
 ```
 
-### * Install MongoDb
+### *Install MongoDb*
 ```
 $ brew tap mongodb/brew
 $ brew install mongodb-community
@@ -42,20 +42,13 @@ $ brew services start mongodb-community
 ```
 For Windows Installation *<a href="https://docs.mongodb.com/manual/administration/install-community/" target="_blank">click here</a>*
 
-### * Install Socket.io
-
-```
-npm install socket.io
-```
-Check out their <a href="https://github.com/socketio/socket.io">Github Link</a> for more information.
-
-### * Start Server
+### *Start Server*
 ```
 cd server
 nodemon start
 ```
 
-### * Open Web Application
+### *Open Web Application*
 ```
 cd client
 npm start
